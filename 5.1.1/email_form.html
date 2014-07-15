@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-mail</title>
+</head>
+<body>
+	<form action="email_send.php" method="post">
+		<table>
+			<tr><td>From:</td> <td><input type="text" name="from"></td></tr>
+			<tr><td>To:</td> <td><input type="text" name="to"></td></tr>
+			<tr><td>Cc:</td> <td><input type="text" name="cc"></td></tr>
+			<tr><td>Bcc:</td> <td><input type="text" name="bcc"></td></tr>
+			<tr><td>Subject:</td> <td><input type="text" name="subject"></td></tr>
+			<tr><td>Message:</td> <td><textarea rows="8" cols="30" name="message"></textarea></td></tr>
+			<tr><td>Password:</td> <td><input type="text" name="password"></td></tr>
+		</table>
+		<input type="submit" value="Send">
+	</form>
+
+</body>
+</html>

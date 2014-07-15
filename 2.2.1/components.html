@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Vet inte om info skickas med POST istället för GET, kolla uppgiftsbeskrivningen!-->
+
+<form action="destination.php" method="post"> 	
+	Name: <input type="text" name="name" placeholder="John Johnson"><br>
+	Email: <input type="text" name="email" placeholder="john@example.com"><br>
+	
+	<p> Occupation:<br>
+	<input type="radio" name="occupation" value="Student">Student<br>
+	<input type="radio" name="occupation" value="Teacher">Teacher
+	</p>
+
+	<p>
+	Current course(s):<br>
+	<input type="checkbox" name="course[]" value="Klientsidan">Webbutveckling - Klientsidan<br>
+	<input type="checkbox" name="course[]" value="Serversidan">Webbutveckling - Serversidan
+	</p>
+
+	<p>
+	Favorite fruit:
+	<select name ="fruit">
+	<option value="">Select fruit</option>
+  	<option value="Orange">Orange</option>
+	<option value="Apple">Apple</option>
+	<option value="Banana">Banana</option>
+	</select>
+	</p>
+
+	<p>
+	About me:<br> 
+	<textarea rows="6" cols="40" name="about" placeholder="I like sports..."></textarea>
+	</p>
+
+	<input type="reset" value="Reset form">
+	<input type="submit" value="Submit">
+
+	<input type="button" value="???">
+</form>
+</body>
+</html>
